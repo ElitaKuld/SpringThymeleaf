@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Thank you</title>
+</head>
+<body>
+
+<p th:text="'Thank you for signing for a good cause, '+${name} +'!'"/>
+<br>
+<p>Sign one more?</p>
+<br>
+<form action="formSignatureReceival" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" value=""><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value=""><br><br>
+    <input type="submit" value="Sign">
+</form>
+
+</body>
+</html>
